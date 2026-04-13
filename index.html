@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Website for paper ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting.">
+  <meta name="keywords" content="ReefMapGS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZKT4KP7DC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-B5QYBSWG1E');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/reef-icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js" defer></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://dxyang.github.io">Daniel Yang</a><sup>1, 2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jungseokhong.com/">Jungseok Hong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://meche.mit.edu/people/faculty/JLEONARD@MIT.EDU">John J. Leonard</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.whoi.edu/profile/ygirdhar/">Yogesh Girdhar</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>MIT</span>,
+            <span class="author-block"><sup>2</sup>Woods Hole Oceanographic Institution</span>
+          </div>
+
+          <!-- <h1 class="is-size-4 conference"><strong>ICRA 2025</strong></h1> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="./static/pdf/blah.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xxxx.xxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=wyXITcY8Ze4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark"
+                   style="opacity:0.5; cursor:not-allowed; pointer-events:none;">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a class="external-link button is-normal is-rounded is-dark"
+                   style="opacity:0.5; cursor:not-allowed; pointer-events:none;">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (coming soon)</span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"
+        class="full-width-image"
+        alt="Overview."/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dmethod">ReefMapGS</span> learns an underwater scene representation accounting for medium degradation effects by incorporating the <a href="https://ieeexplore.ieee.org/document/8578801">underwater image formation model</a> with 3D Gaussians.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            3D Gaussian Splatting is a powerful visual representation, providing high-quality and efficient 3D scene reconstruction, but it is crucially dependent on accurate camera poses
+            typically obtained from computationally intensive processes like structure-from-motion that are unsuitable for field robot applications.
+
+            However in these domains, multimodal sensor data from acoustic, inertial, pressure, and visual sensors are available and suitable for pose-graph optimization-based SLAM methods
+            that can estimate the vehicle's trajectory and thus our needed camera poses while providing uncertainty.
+
+            We propose a 3DGS-based incremental reconstruction framework, ReefMapGS, that builds an initial model from a high certainty region and progressively expands to incorporate the
+            whole scene.
+
+            We incrementally reconstruct the whole scene by interleaving local tracking of new image observations with optimization of the underlying 3DGS scene.
+
+            These refined poses are integrated back into the pose-graph to globally optimize the whole trajectory.
+
+            We show COLMAP-free 3D reconstruction of two underwater reef sites with complex geometry as well as more accurate global pose estimation of our AUV over complex foveated survey
+            trajectories spanning up to 700 m.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{yang2026reefmapgs,
+  author    = {Yang, Daniel and Hong, Jungseok and Leonard, John J. and Girdhar, Yogesh},
+  title     = {ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting},
+  journal   = {arXiv preprint arXiv:xxxx:xxxx},
+  year      = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+      <div class="columns is-centered">
+          <div class="column">
+              <div class="content has-text-centered">
+                  <p>
+                      Website template based on the project page for <a href="https://dorverbin.github.io/nerf-casting/">NeRF-Casting</a>.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
